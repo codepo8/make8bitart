@@ -93,8 +93,8 @@
 	<div id="credits" class="draggy" title="tell the world!">
 	
 		<div class="controls">
-			<img class="ui-dragger" src="assets/draggybits/dragger2.png">	
-			<img class="ui-hider" src="assets/draggybits/hider2.png">
+			<img class="ui-dragger" src="assets/draggybits/dragger2.png" alt="drag icon">	
+			<img class="ui-hider" src="assets/draggybits/hider2.png" alt="close icon">
 		</div>
 		
 		<div id="subheader">an in-browser canvas tool <div class="tip"> ? <span class="tip-text">only works in browsers that support html5 canvas and javascript. <a href="https://github.com/jennschiffer/make8bitart" target="_blank">it's open source!</a></span></div></div>
@@ -132,8 +132,8 @@
 	<div id="toolbox" class="draggy" title="tools">
 
 		<div class="controls">
-			<img class="ui-dragger" src="assets/draggybits/dragger2.png">	
-			<img class="ui-hider" src="assets/draggybits/hider2.png">	
+			<img class="ui-dragger" src="assets/draggybits/dragger2.png" alt="drag icon">	
+			<img class="ui-hider" src="assets/draggybits/hider2.png" alt="hide icon">	
 		</div>
 		
 		<div id="tools" class="inner">
@@ -154,9 +154,9 @@
 		</div>
 		
 		<div id="size" class="inner">
-			<h3>pixel size</h3>
+			<h3><label for="pixel-size">pixel size</label></h3>
 			<input id="pixel-size" class="pixel-size-input" type="number" min="1" max="100" step="1" value="15" />
-			<div class="tip"> ? <span class="tip-text">changing pixel size *won't* clear the whole page, but using different sized pixels makes it less "8-bit"ish. you do you, though. I'm not the 8-bit police.</span></div>
+			<div class="tip"> ? <span class="tip-text">changing <label for="pixel-size-slider">pixel size</label> *won't* clear the whole page, but using different sized pixels makes it less "8-bit"ish. you do you, though. I'm not the 8-bit police.</span></div>
 			<input id="pixel-size-slider" class="pixel-size-input" type="range" min="1" max="100" step="1" value="15" />
 			<div id="pixel-size-demo" class="color-demo"> </div>
 		</div>
@@ -198,29 +198,29 @@
 	<div id="colorbox" class="draggy" title="color palette">
 
 		<div class="controls">
-			<img class="ui-dragger" src="assets/draggybits/dragger2.png">	
-			<img class="ui-hider" src="assets/draggybits/hider2.png">	
+			<img class="ui-dragger" src="assets/draggybits/dragger2.png" alt="drag">	
+			<img class="ui-hider" src="assets/draggybits/hider2.png" alt="hide">	
 		</div>
 		
 		<div id="color" class="inner clearfix">
 			<h3>pick a color:</h3>
-			<a class="button color primary red" title="red" data-color="rgba(255, 0, 0, 1)" /> </a>
-			<a class="button color primary orange" title="orange" data-color="rgba(255, 165, 0, 1)" /> </a>
-			<a class="button color primary yellow" title="yellow" data-color="rgba(255, 255, 0, 1)" /> </a>
-			<a class="button color primary green" title="green" data-color="rgba(0, 128, 0, 1)" /> </a>
-			<a class="button color primary blue" title="blue" data-color="rgba(0, 0, 255, 1)" /> </a>
-			<a class="button color primary purple" title="purple" data-color="rgba(128, 0, 128, 1)" /> </a>
-			<a class="button color primary black" title="black" data-color="rgba(0, 0, 0, 1)" /> </a>
-			<a class="button color primary gray" title="gray" data-color="rgba(128, 128, 128, 1)" /> </a>
-			<a class="button color primary white" title="white" data-color="rgba(255, 255, 255, 1)" /> </a>
-			<a class="button color favorite" title="jenn's pick" data-color="rgba(255, 105, 180, 1)" /> </a>
-			<a class="button color transparent" title="erase" data-color="rgba(0, 0, 0, 0)" /> </a>
-			<a class="button color custom" title="custom" /></a>
+			<button class="button color primary red" title="red" data-color="rgba(255, 0, 0, 1)">red</button>
+			<button class="button color primary orange" title="orange" data-color="rgba(255, 165, 0, 1)">orange</button>
+			<button class="button color primary yellow" title="yellow" data-color="rgba(255, 255, 0, 1)">yellow</button>
+			<button class="button color primary green" title="green" data-color="rgba(0, 128, 0, 1)">green</button>
+			<button class="button color primary blue" title="blue" data-color="rgba(0, 0, 255, 1)">blue</button>
+			<button class="button color primary purple" title="purple" data-color="rgba(128, 0, 128, 1)">purple</button>
+			<button class="button color primary black" title="black" data-color="rgba(0, 0, 0, 1)">black</button>
+			<button class="button color primary gray" title="gray" data-color="rgba(128, 128, 128, 1)">gray</button>
+			<button class="button color primary white" title="white" data-color="rgba(255, 255, 255, 1)">white</button>
+			<button class="button color favorite" title="jenn's pick" data-color="rgba(255, 105, 180, 1)">favorite</button>
+			<button class="button color transparent" title="erase" data-color="rgba(0, 0, 0, 0)">erase</button>
+			<button class="button color custom" title="custom">custom</button>
 		</div>
 		
 		<div id="colorpicker">
-			<h3>hex value:</h3>
-			<p>#<input id="hex-color" type="text" value="000000" /> <a href="#" title="color dropper"><img id="color-dropper" src="assets/dropper.png" alt="dropper"></a></p>
+			<h3><label for="hex-color">hex value:</h3>
+			<p>#<input id="hex-color" type="text" value="000000"> <a href="#" title="color dropper"><img id="color-dropper" src="assets/dropper.png" alt="dropper"></a></p>
 			
 			<h3 class="eightbit">click to pick:</h3>
 			<canvas id="8bitcolors" width="150" height="150"></canvas>
@@ -231,7 +231,7 @@
 
 	<div id="save-box">
 		<div id="save-modal">
-			<img class="ui-hider" src="assets/draggybits/hider2.png">
+			<img class="ui-hider" src="assets/draggybits/hider2.png" alt="hide">
 
 			<h2>you saved your art!</h2>
 			<img id="finished-art" />
