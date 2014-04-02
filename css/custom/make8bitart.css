@@ -61,6 +61,10 @@ ul.instructions { padding: 0 0 0 20px; }
 #colorbox { width: 150px; }
 #colorbox h3 { margin: 5px 0; }
 #color { margin-bottom: 10px; }
+.button {
+    overflow: hidden;
+    text-indent: -300px;
+}
 .button { display: block; float: left; background: #efefef; border: 2px solid rgba(255,255,255,.5); margin: 5px 10px 5px 0; padding: 3px 6px; color: #333; cursor: pointer; width: 40px; text-align: center; font-weight: normal; }
 .button.save { float:none; width: 75px; }
 .button:hover { background: #ddd; }
